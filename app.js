@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-
+    fileContent = [];
     res.render('index', { fileContent });
 });
 
